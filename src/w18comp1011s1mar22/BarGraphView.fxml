@@ -8,16 +8,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="w18comp1011s1mar22.BarGraphViewController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="w18comp1011s1mar22.BarGraphViewController">
     <stylesheets>
         <URL value="@bargraphview.css" />
     </stylesheets>
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0" />
-      <VBox layoutX="113.0" layoutY="72.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="TOP_CENTER" layoutX="113.0" layoutY="72.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Super Awesome Bar Graph" />
-            <BarChart>
+            <Label styleClass="headerLabel" text="Super Awesome Bar Graph" />
+            <BarChart fx:id="barChart">
               <xAxis>
                 <CategoryAxis fx:id="months" side="BOTTOM" />
               </xAxis>

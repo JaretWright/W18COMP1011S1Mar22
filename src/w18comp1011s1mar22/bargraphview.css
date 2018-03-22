@@ -3,5 +3,30 @@
  */
 
 .mainFxmlClass {
+    -fx-background-color: #42b9f4;
+}
 
+.headerLabel{
+    -fx-font: 40px Arial;
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, red 0%, darkorange 50%);
+    -fx-stroke: black;
+    -fx-stroke-width: 3;
+}
+
+.default-color0.chart-bar{
+    -fx-bar-fill: #22bad9;
+    -fx-background-color: linear-gradient(derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(derive(-fx-bar-fill,80%), derive(-fx-bar-fill, 0%)),
+                          linear-gradient(derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+}
+
+.default-color1.chart-bar{
+    -fx-bar-fill: #4286f4;
+    -fx-background-color: linear-gradient(derive(-fx-bar-fill,-30%), derive(-fx-bar-fill,-40%)),
+                          linear-gradient(derive(-fx-bar-fill,80%), derive(-fx-bar-fill, 0%)),
+                          linear-gradient(derive(-fx-bar-fill,30%), derive(-fx-bar-fill,-10%));
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
 }
